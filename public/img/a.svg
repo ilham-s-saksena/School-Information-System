@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="280.37mm" height="178.118mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 32413.98 20592.45"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="805" font-variant="normal" style="fill-rule:nonzero" font-weight="900">
+	<font-face 
+		font-family="Montserrat Black">
+		<font-face-src>
+			<font-face-name name="Montserrat Black"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="A" horiz-adv-x="805" d="M-18.9974 0l305.997 700.002 232.001 0 306.002 -700.002 -244.003 0 -225.997 588 91.9962 0 -225.997 -588 -239.999 0zm181.998 121.999l59.9997 170.002 321.998 0 59.9997 -170.002 -441.997 0z"/>
+   <glyph unicode="E" horiz-adv-x="673" d="M272.998 439.998l312 0 0 -169.996 -312 0 0 169.996zm16.001 -261.998l350.001 0 0 -178 -582.002 0 0 700.002 569.003 0 0 -178 -337.002 0 0 -344.002z"/>
+   <glyph unicode="K" horiz-adv-x="765" d="M268.002 150.002l-12.9991 258.996 263.997 291.004 257.002 0 -296.005 -326.002 -130.999 -134.001 -80.9966 -89.9968zm-211.004 -150.002l0 700.002 232.001 0 0 -700.002 -232.001 0zm460.003 0l-206.003 272.001 153.004 161.999 325.997 -433.999 -272.998 0z"/>
+   <glyph unicode="P" horiz-adv-x="742" d="M56.9978 0l0 700.002 337.002 0c65.3333,0 121.835,-10.6673 169.501,-32.002 47.6652,-21.3347 84.4997,-51.833 110.498,-91.5005 26.0037,-39.6674 39.0028,-86.4991 39.0028,-140.5 0,-54.0013 -12.9991,-100.664 -39.0028,-139.999 -25.9982,-39.3351 -62.8327,-69.8335 -110.498,-91.5005 -47.6652,-21.667 -104.167,-32.4978 -169.501,-32.4978l-205.997 0 104.995 100.996 0 -272.998 -236 0zm236 246.999l-104.995 107 190.999 0c32.6667,0 56.8343,7.33311 72.4976,21.9993 15.6687,14.6662 23.503,34.6661 23.503,59.9997 0,25.3336 -7.83433,45.3334 -23.503,59.9997 -15.6632,14.6662 -39.8309,21.9993 -72.4976,21.9993l-190.999 0 104.995 107 0 -377.998z"/>
+   <glyph unicode="T" horiz-adv-x="653" d="M208.999 0l0 517.001 -205 0 0 183.001 646 0 0 -183.001 -205 0 0 -517.001 -236 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Montserrat Black";font-variant:normal;font-weight:900;src:url("#FontID0") format(svg)}
+    .str0 {stroke:black;stroke-width:489.42;stroke-miterlimit:22.9256}
+    .str1 {stroke:black;stroke-width:1427.48;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:black}
+    .fnt0 {font-weight:900;font-size:2122.06px;font-family:'Montserrat Black'}
+    .fnt1 {font-weight:900;font-size:7171.29px;font-family:'Montserrat Black'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1825903010944">
+   <path class="fil0 str0" d="M21885.18 244.71l10284.08 0 0 6091.25c0,1395.61 -1141.86,2537.47 -2537.48,2537.47l-9790.09 0c-271.7,0 -493.97,-222.29 -493.97,-493.98l0 -5597.28c0,-1395.6 1141.85,-2537.46 2537.46,-2537.46z"/>
+   <g>
+    <text x="21886.77" y="2460.61"  class="fil1 fnt0">PAKET</text>
+    <text x="22603.73" y="8142.97"  class="fil1 fnt1">A</text>
+   </g>
+  </g>
+  <g id="_1825903011280">
+   <g id="SVGRepo_bgCarrier">
+   </g>
+   <g id="SVGRepo_tracerCarrier">
+   </g>
+   <g id="SVGRepo_iconCarrier">
+    <path class="fil0 str1" d="M12736.31 15922.71l1597.39 0c857.74,0 1660.9,-420.81 2149.15,-1126.04l3306.35 -4775.86c224.78,-324.68 254.66,-745.96 78.13,-1099.12 -338.93,-677.92 -1252.15,-805.82 -1764.33,-247.08l-2624.54 2863.09c-1055.05,1151.06 -2712.37,1528.84 -4162.02,949.02l-3583.92 -1433.52c-891.76,-356.73 -1901.96,-251.59 -2701.09,281.17l-3794.56 2529.69c-492.86,328.64 -663.93,972.77 -399.02,1502.55 290.09,580.24 995.62,815.42 1575.83,525.35l3150.31 -1575.15c613.65,-306.88 1283.74,301.54 1037.46,941.9l-1776.91 4619.91m494.49 -16318.11l-2966.92 0m1977.95 2966.94l-1977.95 0m13845.63 -494.49c0,2184.78 -1771.06,3955.9 -3955.9,3955.9 -2184.74,0 -3955.91,-1771.12 -3955.91,-3955.9 0,-2184.78 1771.17,-3955.9 3955.91,-3955.9 2184.84,0 3955.9,1771.12 3955.9,3955.9z"/>
+   </g>
+  </g>
+ </g>
+</svg>
