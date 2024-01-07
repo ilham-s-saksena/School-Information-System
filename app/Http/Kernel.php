@@ -67,5 +67,13 @@ class Kernel extends HttpKernel
         'isUser' => \App\Http\Middleware\UserMiddleware::class,
         'isAdmin' => \App\Http\Middleware\AdminMiddleware::class,
         'isOperator' => \App\Http\Middleware\OperatorMiddleware::class,
+        
     ];
+
+    protected $routeMiddleware = [
+        // ...
+        'auth.siswa' => \App\Http\Middleware\AuthenticatedsiswaMiddleware::class,
+        // ...
+    ];
+    
 }

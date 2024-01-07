@@ -12,11 +12,17 @@ class SiswaController extends Controller
      */
     public function tambah_siswa(Request $request)
     {
+        $username = '@' . strtolower(str_replace(' ', '', $request->input('nama')));
+        $password = Hash::make("12345");
+
         $siswa = new Siswa();
         $siswa->nama = $request->input('nama');
         $siswa->WA = $request->input('WA');
         $siswa->tahun_masuk = $request->input('TA');
         $siswa->alamat = $request->input('alamat');
+        $siswa->username = $username;
+        $siswa->password = $password;
+        
         $siswa->save();
 
         return back()->with('message', "Data Siswa $request->nama Berhasil Ditambahkan");

@@ -61,7 +61,7 @@
 <div class="py-2">
 
 <div class="px-2 py-3">
-    <form class="w-full relative flex" method="POST" action="{{route('detail.absen.filter')}}">
+    <form class="w-full relative flex" method="GET" action="{{route('detail.absen.filter')}}">
         @csrf
         <input type="number" name="year" value="{{$year}}" class="w-full border-2 border-teal-600 rounded-lg pl-36 font-bold text-gray-500">
         <div class="absolute flex space-x-1 items-center left-0 top-1/2 -translate-y-1/2 px-2 h-full border-l-2 border-teal-600 rounded-l-lg bg-teal-600 font-bold text-white">

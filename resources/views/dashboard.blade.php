@@ -159,13 +159,13 @@ Toggle modal
                 <p class="font-semibold mb-1">Pendapatan Anda</p>
                 <div class="flex">
                     <div class="bg-teal-200 p-2 rounded relative w-full">
-                        <p class="absolute text-red-500 border border-red-500 bg-red-50 py-1 px-1.5 text-xs right-3 top-1/2 -translate-y-1/2 rounded-tr-md rounded-bl-md">
-                            Belum diterima
+                        <p class="absolute font-extrabold text-green-500 border-2 border-green-500 bg-green-50 py-1 px-5 text-xl right-3 top-1/2 -translate-y-1/2 rounded-tr-md rounded-bl-md">
+                            Rp. <span>{{ number_format($absenBulanIni->count()*30000) }}</span>
                         </p>
-                        <p class="font-bold">Bulan ini</p>
+                        <p class="font-bold text-sm">Pendapatan Anda</p>
                         <div class="flex justify-between">
                             <p class="font-bold text-xl">
-                                Rp. <span>{{ number_format($absenBulanIni->count()*30000) }}</span>
+                                Bulan Ini
                             </p>
                             
                         </div>
@@ -174,13 +174,13 @@ Toggle modal
 
                 <div class="flex mt-3">
                     <div class="bg-teal-200 p-2 rounded relative w-full">
-                        <p class="absolute text-red-500 border border-red-500 bg-red-50 py-1 px-1.5 text-xs right-3 top-1/2 -translate-y-1/2 rounded-tr-md rounded-bl-md">
-                            Belum diterima
+                        <p class="absolute font-extrabold text-green-500 border-2 border-green-500 bg-green-50 py-1 px-5 text-xl right-3 top-1/2 -translate-y-1/2 rounded-tr-md rounded-bl-md">
+                            Rp. <span>{{ number_format($absenBulanLalu->count()*30000) }}</span>
                         </p>
-                        <p class="font-bold">Bulan Lalu</p>
+                        <p class="font-bold">Pendapatan Anda</p>
                         <div class="flex justify-between">
                             <p class="font-bold text-xl">
-                                Rp. <span>{{ number_format($absenBulanLalu->count()*30000) }}</span>
+                                Bulan Lalu
                             </p>
                             
                         </div>
@@ -288,11 +288,22 @@ Toggle modal
                                     <label for="mapel">Mata Pelajaran</label>
                                     <input type="text" list="mapel_list" name="mapel" id="mapel" placeholder="Mata Pelajaran" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
                                     <datalist id="mapel_list">
-                                        <option value="Matematika">
+                                        <option value="Agama (PAI)">
+                                        <option value="PPKn">
                                         <option value="IPA">
                                         <option value="IPS">
-                                        <option value="B Jawa">
+                                        <option value="B Indonesia">
                                         <option value="B Inggris">
+                                        <option value="B Jawa">
+                                        <option value="Seni Budaya">
+                                        <option value="Prakarya">
+                                        <option value="Sejarah Indonesia">
+                                        <option value="Sejarah Dunia">
+                                        <option value="Geografi">
+                                        <option value="Sosiologi">
+                                        <option value="Ekonomi">
+                                        <option value="TIK">
+                                        <option value="Penjas">
                                       </datalist>
                                 </div>
                                 <div>
@@ -304,21 +315,29 @@ Toggle modal
                                         <option value="6">
                                         <option value="7">
                                         <option value="8">
+                                        <option value="9">
+                                        <option value="10">
+                                        <option value="11">
+                                        <option value="12">
                                       </datalist>
                                 </div>
                             </div>
                             <div>                                
                                 <label for="message" class="block mb-1 text-sm font-medium text-gray-900 ">Materi</label>
-                                <textarea id="message" name="materi" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Materi yang diajarkan..."></textarea>
+                                <textarea id="message" name="materi" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Materi yang diajarkan..." required></textarea>
                             </div>
                             <div>
                                 <label for="jam" class="block mb-1 text-sm font-medium text-gray-900 ">Jam Mengajar</label>
-                                <select id="jam" name="jam" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
-                                    <option selected>Pilih Jam Mengajar</option>
+                                <select id="jam" name="jam" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                                    
                                     <option value="09.00 - 09.45">09.00 - 09.45</option>
                                     <option value="09.45 - 10.30">09.45 - 10.30</option>
                                     <option value="10.30 - 11.15">10.30 - 11.15</option>
                                     <option value="11.15 - 12.00">11.15 - 12.00</option>
+                                    <option value="13.00 - 13.45">13.00 - 13.45</option>
+                                    <option value="13.45 - 14.30">13.45 - 14.30</option>
+                                    <option value="14.30 - 15.15">14.30 - 15.15</option>
+                                    <option value="15.15 - 16.00">15.15 - 16.00</option>
                                 </select>
                             </div>
                             <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Submit</button>
@@ -329,5 +348,5 @@ Toggle modal
             </div>
         </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    
 </x-app-layout>

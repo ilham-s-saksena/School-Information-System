@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Admin</title>
+    <title>PKBM Harapan Bangsa</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -37,20 +38,20 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
             <ul class="flex flex-col items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white/25 ">
             <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-orange-700 rounded md:bg-transparent md:text-orange-700 md:p-0 " aria-current="page">Home</a>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-orange-700 rounded md:bg-transparent md:text-orange-700 md:p-0 " aria-current="page">Beranda</a>
             </li>
 
             <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0">Services</a>
+                <a href="#program" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0">Program</a>
             </li>
             <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0">Pricing</a>
+                <a href="#fasilitas" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0">Fasilitas</a>
             </li>
             <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0">Contact</a>
+                <a href="#kegiatan" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0">Kegiatan</a>
             </li>
 
-            <a href="{{ route('login') }}" class="bg-orange-600 text-white px-3 flex items-center justify-between w-full py-2 rounded-lg hover:bg-gray-50 hover:text-orange-600 hover:shadow-md md:hover:bg-transparent md:border-0 transition-colors ">
+            <a href="{{ route('pilih-login') }}" class="bg-orange-600 text-white px-3 flex items-center justify-between w-full py-2 rounded-lg hover:bg-gray-50 hover:text-orange-600 hover:shadow-md md:hover:bg-transparent md:border-0 transition-colors ">
                 Login
                 <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"></path>
@@ -64,7 +65,7 @@
     </nav>
 
     <main>
-        <section class="h-[65vh] sm:h-[50vh] bg-cover bg-no-repeat bg-center shadow-xl" style="background-image: url('/img/banner1.jpg');"></section>
+        <section class="h-[35vh] sm:h-[50vh] bg-cover bg-no-repeat bg-center shadow-xl" style="background-image: url('/img/banner1.jpg');"></section>
         <section class="w-fit p-2 bg-orange-100 text-gray-800 mx-auto text-center rounded-full shadow-xl text-3xl font-bold -mt-16 sm:-mt-24 z-20">
             <img src="/img/logo.png" alt="logo-pkbm-harbang" class="mx-auto rounded-full w-32 sm:w-44 z-20">
         </section>
@@ -87,8 +88,10 @@
                 <span class="italic font-semibold sm:mb-5 mb-0">Wassalamu'alaikum Warahmatullahi Wabarakatuh</span>
             </div>
 
-            <div class="w-full max-w-sm flex flex-col items-center justify-center order-1 sm:order-2 py-2">
-                <img src="/img/profile.png" class="px-5 w-full" alt="ketua-pkbm-harbang">
+            <div class="w-full max-w-sm flex flex-col items-center justify-center order-1 sm:order-2 py-2 relative">
+                <span class="absolute left-1/2 bottom-1/2 sm:bottom-1/4 blur-lg w-44 h-44 sm:w-96 sm:h-96 rounded-full -translate-x-1/2 bg-orange-300 z-0"></span>
+                <span class="absolute left-1/2 bottom-1/2 sm:bottom-1/4 blur-sm w-36 h-36 sm:w-80 sm:h-80 rounded-full -translate-x-1/2 bg-orange-400/75 z-0"></span>
+                <img src="/img/profile.png" class="px-5 w-2/3 sm:w-full z-20" alt="ketua-pkbm-harbang">
                 <h2 class="flex flex-col text-center italic">
                     <span class="font-bold text-gray-950">Ketua PKBM Harapan Bangsa</span>
                     <span class="font-semibold text-gray-800">Sumarsih Ely Wahyuni S.Pd. AUD.</span>
@@ -97,7 +100,7 @@
 
         </section>
 
-        <section class="max-w-screen bg-gradient-to-b from-white  to-yellow-100 py-5">
+        <section id="program" class="max-w-screen bg-gradient-to-b from-white  to-yellow-100 py-5">
             <div class="sm:px-20 px-6">
                 <h1 class="text-center text-2xl font-bold mb-5">VISI MISI</h1>
             </div>
@@ -154,7 +157,7 @@
 
             </div>
         </section>
-        <section class="max-w-screen bg-gradient-to-b to-green-200 via-100-200 from-yellow-100 pt-20 pb-20 px-5">
+        <section id="fasilitas" class="max-w-screen bg-gradient-to-b to-green-200 via-100-200 from-yellow-100 pt-20 pb-20 px-5">
             <div class="grid sm:grid-cols-3 grid-cols-1 items-center">
                 <div class="text-center sm:text-right px-5">
                     <h1 class="font-extrabold text-3xl">FASILITAS</h1>
@@ -190,7 +193,7 @@
             </div>
         </section>
 
-        <section class="max-w-screen bg-gradient-to-t to-green-200 via-100-200 from-white pt-5 pb-20 px-5">
+        <section id="kegiatan" class="max-w-screen bg-gradient-to-t to-green-200 via-100-200 from-white pt-5 pb-20 px-5">
             <div class="grid sm:grid-cols-3 grid-cols-1 items-center">
                 <div class="grid sm:grid-cols-3 grid-cols-1 sm:col-span-2 col-span-1  gap-2">
                     <div class="col-span-1 sm:col-span-2 w-full py-2 rounded-lg hover:shadow-xl h-52 bg-cover bg-no-repeat bg-center shadow-xl" 
@@ -224,16 +227,16 @@
                     </div>
                     PKBM Harapan Bangsa    
                 </a>
-                <div class="my-6 text-gray-500 grid grid-cols-2 gap-4 px-44">
-                    <div class="text-right text-gray-800">
+                <div class="my-6 text-gray-500 grid grid-cols-1 sm:grid-cols-2 gap-4 px-0 sm:px-44">
+                    <div class="text-center sm:text-right text-gray-800">
                         <h1 class="font-bold">Alamat</h1>
                         <h2 class="text-gray-500">Jl. Kalianja No 10, RT 01 RW 02, Desa Petir, Kecamatan Kalibagor, Kabupaten Banyumas, Kode pos 53191</h2>
                     </div>
-                    <div class="text-left text-gray-800">
+                    <div class="text-center sm:text-left text-gray-800">
                         <h1 class="font-bold">Kontak</h1>
                         <h2 class="text-gray-500">
-                            <span class="flex">Email : <span> pkbmharapanbangsa@gmail.com</span></span>
-                            <span class="flex">Whatsapp : <span> +62 858-7636-5917</span></span>
+                            <span class="flex justify-center sm:justify-start">Email : <span> pkbmharapanbangsa@gmail.com</span></span>
+                            <span class="flex justify-center sm:justify-start">Whatsapp : <span> +62 858-7636-5917</span></span>
                         </h2>
                     </div>
                 </div>

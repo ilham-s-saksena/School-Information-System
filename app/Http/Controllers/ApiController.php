@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Absen;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
+use Firebase\JWT\JWT;
 
 
 class ApiController extends Controller
@@ -21,11 +22,12 @@ class ApiController extends Controller
             $token = $user->createToken('Harabang.Januari@12')->plainTextToken;
 
             return response()->json(['token' => $token], 200);
+        } else {
+            return response()->json(["error" => "Password atau Email salah"], 400);
         }
+        
 
-        throw ValidationException::withMessages([
-            'email' => ['The provided credentials are incorrect.'],
-        ]);
+        
     }
 
     public function register(Request $request)
@@ -88,7 +90,11 @@ class ApiController extends Controller
             $penghasilan = $BulanIni->count() * $user->index;
             
             return response()->json([
-                'user' => $user,
+                'user' => [
+                    "email" => $user->email,
+                    "name" => $user->name,
+                    "foto" => $user->foto,
+                    ],
                 'BulanIni' => $BulanIni->count(),
                 'HariIni' => $HariIni->count(),
                 'penghasilan' => $penghasilan,
@@ -101,6 +107,7 @@ class ApiController extends Controller
             
             return response()->json(['error' => "Token Login Salah/Tidak Ada"], 401);
         }
+        
 
         
     }
@@ -128,7 +135,11 @@ class ApiController extends Controller
             $penghasilan = $BulanIni->count() * $user->index;
             
             return response()->json([
-                'user' => $user,
+                'user' => [
+                    "email" => $user->email,
+                    "name" => $user->name,
+                    "foto" => $user->foto,
+                    ],
                 'penghasilan' => $penghasilan,
                 'absenUser' => $BulanIni,
                 'bulan' => $awalBulan
@@ -153,7 +164,11 @@ class ApiController extends Controller
             $user = User::find($userId);
             
             return response()->json([
-                'user' => $user
+                'user' => [
+                    "email" => $user->email,
+                    "name" => $user->name,
+                    "foto" => $user->foto,
+                    ],
             ], 200);
     
             

@@ -116,7 +116,7 @@ class HomeController extends Controller
 
     public function foto(Request $request){
         $request->validate([
-            'foto' => 'required|image|mimes:jpeg,png,jpg|max:2048', // Sesuaikan dengan kebutuhan Anda
+            'foto' => 'required|image|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         // Dapatkan user ID dan nama file

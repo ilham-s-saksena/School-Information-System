@@ -80,9 +80,15 @@ class PembayaranController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Pembayaran $pembayaran)
+    public function cetak_spp($id)
     {
-        //
+        $bukti = Income::find($id);
+        $keterangan = $bukti->keterangan; 
+        $start = strpos($bukti->keterangan, 'A.N') + strlen('A.N') + 1;
+        $end = strpos($bukti->keterangan, ',', $start);
+        $an = $result = substr($bukti->keterangan, $start, $end - $start);
+
+        return view('operator.cetak-bukti', compact('bukti', 'an'));
     }
 
     /**
