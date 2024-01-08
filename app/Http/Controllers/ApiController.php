@@ -182,6 +182,7 @@ class ApiController extends Controller
     public function absen(Request $request){
 
         if ($request->user()) {
+
             $userId = $request->user()->id;
 
             $tanggal = $request->input('tgl');
@@ -191,6 +192,13 @@ class ApiController extends Controller
             $validation = Absen::where('user_id', $userId)->where('tanggal', $tanggal)->get();
             $validation2 = Absen::where('user_id', $userId)->where('tanggal', $tanggal)->where('waktu', $waktu)->get();
             $validation3 = Absen::where('tanggal', $tanggal)->where('waktu', $waktu)->where('kelas', $kelas)->get();
+
+            $hari = Carbon::createFromFormat('Y-m-d', $tanggal)->format('l');
+
+            //Validation Lvl-0
+            if($hari !== "Friday" && $hari !== "Saturday" && $hari !== "Sunday"){
+                return response()->json(['message' => "Anda Tidak Dapat input Absen Mengajar pada Hari '-$hari-', Hari tersebut bukanlah hari yang dijadwalkan untuk mengajar!"], 401);
+            }
 
             if ($validation->count() >= 3){
                 return response()->json(['message' => "Tidak Dapat Absen Lebih dari 3 Kali dalam Hari Yang Sama, Anda mencoba menginputkan absen pada tanggal $tanggal, absen anda sudah terhitung 3 JPL pada tanggal tersebut"], 401);
@@ -205,6 +213,42 @@ class ApiController extends Controller
                 $attempOn = $validation3->first()->user_id;
                 $nama = User::find($attempOn)->name;
                 return response()->json(['message' => "Error, Anda mencoba absen mengajar kelas $kelas, namun kelas tersebut sudah diajar oleh $nama Pada waktu yang sama ($tanggal, $waktu)"], 401);
+            }
+
+            //Validation Lvl-4
+            $tanggalHariIni = new \DateTime($tanggal);
+            $namaHari = date('w', strtotime($tanggal));
+            if($namaHari == 0){ // Jika Minggu
+                $minggu = $tanggalHariIni->sub(new \DateInterval("P0D"))->format('Y-m-d');
+                $sabtu = $tanggalHariIni->sub(new \DateInterval("P1D"))->format('Y-m-d');
+                $jumat = $tanggalHariIni->sub(new \DateInterval("P1D"))->format('Y-m-d');
+            } elseif ($namaHari == 5) { // Jika Jumat
+                $jumat = $tanggalHariIni->sub(new \DateInterval("P0D"))->format('Y-m-d');
+                $sabtu = $tanggalHariIni->add(new \DateInterval("P1D"))->format('Y-m-d');
+                $minggu = $tanggalHariIni->add(new \DateInterval("P1D"))->format('Y-m-d');
+            } elseif ($namaHari == 6) { // Jika Sabtu
+                $minggu = $tanggalHariIni->add(new \DateInterval("P1D"))->format('Y-m-d');
+                $sabtu = $tanggalHariIni->sub(new \DateInterval("P1D"))->format('Y-m-d');
+                $jumat = $tanggalHariIni->sub(new \DateInterval("P1D"))->format('Y-m-d');
+            }
+
+            //Sub Validations
+            $subValidation4_jumat = Absen::where('user_id', $userId)->where('tanggal', $jumat)->get()->count();
+            $subValidation4_sabtu = Absen::where('user_id', $userId)->where('tanggal', $sabtu)->get()->count();
+            $subValidation4_minggu = Absen::where('user_id', $userId)->where('tanggal', $minggu)->get()->count();
+
+            if ($subValidation4_jumat+$subValidation4_sabtu+$subValidation4_minggu >= 6){
+                return response()->json(['message' => "Tidak Dapat Absen Lebih dari 6 Kali dalam Satu Minggu!,Anda sudah absen $subValidation4_jumat Kali pada Hari Jumat, $jumat; $subValidation4_sabtu Kali pada Hari Sabtu, $sabtu; dan $subValidation4_minggu Kali pada Hari Minggu, $minggu;"], 401);
+            }
+
+
+            //Validation Lvl-5
+            $tanggalPadaHariIni = new \DateTime();
+            $tanggalDiberikan = new \DateTime($tanggal);
+            if ($tanggalDiberikan > $tanggalPadaHariIni) {
+                $tanggalPadaHariIniStr = $tanggalPadaHariIni->format('d-m-Y');
+                $tanggalDiberikanStr = $tanggalDiberikan->format('d-m-Y');
+                return response()->json(['message' => "Lhoooo, sekarang baru tanggal $tanggalPadaHariIniStr, anda mencoba absen untuk tanggal yang belum dilalui : $tanggalDiberikanStr"], 401);
             }
 
             $absensi = new Absen();

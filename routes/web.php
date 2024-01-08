@@ -7,6 +7,19 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\Auth\LoginsiswaController;
 use App\Http\Middleware\AuthenticatedsiswaMiddleware;
+use Illuminate\Support\Facades\Storage;
+
+Route::get('/download/{filename}', function ($filename) {
+    $filePath = storage_path('app/public/apk/' . $filename);
+
+
+    if (!Storage::exists('public/apk/' . $filename)) {
+        abort(404);
+    }
+
+    return response()->download($filePath);
+});
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,10 +29,13 @@ Route::get('/chose-logins', function () {
     return view('pilih-login');
 })->name('pilih-login');
 
+Route::get('/download', function () {
+    return view('download');
+})->name('download');
+
 Route::get('/login-siswa', function () {
     return view('siswa.login-siswa');
 })->name('siswa-login');
-
 
 Route::post('/siswa-login', [LoginsiswaController::class, 'authenticate_siswa'])->name('login-siswa');
 

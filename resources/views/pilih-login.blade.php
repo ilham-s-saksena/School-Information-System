@@ -31,6 +31,13 @@
     TUTOR
 </a>
 
+<a href="{{route('download')}}" class="text-sm text-orange-500 flex space-x-1 justify-center items-center group hover:text-orange-600">
+    <span>download aplikasi Android untuk Tutor <span class="group-hover:underline"> disini</span></span>
+    <svg class="w-3.5 mt-1" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+    </svg>
+</a>
+
 <div class="text-sm text-gray-400 flex justify-center mt-5 mb-2">© 2024-2025 <a href="#" class="hover:underline">PKBM Harapan Bangsa™</a>. All Rights Reserved.</div>
 </div>
 
