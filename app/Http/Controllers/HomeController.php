@@ -8,9 +8,13 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Hash;
+use App\Imports\SiswaImport;
+use PhpOffice\PhpSpreadsheet\IOFactory;
 
 
-class HomeController extends Controller
+
+class HomeController extends Controller 
 {
 
     public function index()
@@ -142,6 +146,38 @@ class HomeController extends Controller
 
 
         return back();
+    }
+
+    public function excel(Request $request){
+
+        $spreadsheet = IOFactory::load($request->file('dataExcel'));
+        $worksheet = $spreadsheet->getActiveSheet();
+        $data = [];
+
+        foreach ($worksheet->getRowIterator() as $row) {
+            $rowData = [];
+            foreach ($row->getCellIterator() as $cell) {
+                $rowData[] = $cell->getValue();
+            }
+            $data[] = $rowData;
+        }
+        if (!empty($data) && count($data[0]) > 0) {
+            array_shift($data);
+        }
+
+        foreach ($data as $row) {
+            Siswa::create([
+                'nama'  => $row[0],
+                'alamat' => $row[1],
+                'wa' => $row[2],
+                'angkatan' => $row[3],
+                'username' => $row[4],
+                'password' => Hash::make($row[5]),
+            ]);
+        }
+
+        
+
     }
 
 

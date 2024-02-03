@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\Kehadiransiswa;
+use App\Models\Siswa;
+use Carbon\Carbon;
 use App\Models\Absen;
 use Illuminate\Support\Facades\Hash;
-use Carbon\Carbon;
 use Firebase\JWT\JWT;
 
 
@@ -340,4 +342,60 @@ class ApiController extends Controller
             return response()->json(["message" => "Unauthorized"], 401);
         }
     }
+
+    public function absen_siswa(Request $request)
+    {
+        if ($request->user()) {
+            if ($request->input('qr')) {
+                $qr = $request->input('qr');
+                $pieces = explode('-', $qr);
+
+                if (empty($pieces[1])) {
+                    return response()->json(['status' => 'error', 'message' => 'Qr Code Not Valid - Not Student QR'], 402);
+                }
+                
+                
+                $siswaId = $pieces[0];
+                $siswaName = $pieces[1]; 
+                $currentTime = date('H:i:s');
+                date_default_timezone_set('Asia/Jakarta');
+                $currentDate = date('Y-m-d');
+                $point = 1;
+                $keterangan = "Hadir: ". $request->user()->name;
+                
+                $siswa = Siswa::find($siswaId);
+                if ($siswa) {
+                    if ($siswa->username == $siswaName) {
+                        $cek = $siswa->kehadiran->where('tanggal', $currentDate)->get();
+                        if ($cek->count() > 0) {
+                            return response()->json(['status' => 'error', 'message' => 'Not Allowed, This Student Already Absent'], 403);
+                        } else {
+                            $absen = new Kehadiransiswa();
+                            $absen->siswa_id = $siswa->id;
+                            $absen->waktu = $currentTime;
+                            $absen->tanggal = $currentDate;
+                            $absen->point = $point;
+                            $absen->keterangan = $keterangan;
+                            $act = $absen->save();
+                            if ($act) {
+                                $tutor = $request->user()->name;
+                                return response()->json(['status' => 'error', 'ok' => "absent $siswa->nama created By Tutor $tutor"], 201);
+                            } else {
+                                return response()->json(['status' => 'error', 'message' => 'cannot create absent'], 403);
+                            }
+                        }
+                    } else {
+                        return response()->json(['status' => 'error', 'message' => 'Qr Code Data Not Valid'], 402);
+                    }
+                } else {
+                    return response()->json(['status' => 'error', 'message' => 'Siswa not Found'], 404);
+                }
+                
+            } else {
+                return response()->json(['status' => 'error', 'message' => 'Qr Code Not Found'], 404);
+            }
+ 
+        }
+    }
+
 }

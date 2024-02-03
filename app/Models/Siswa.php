@@ -32,4 +32,14 @@ class Siswa extends Model implements Authenticatable
     {
         return $this->hasMany(Kehadiransiswa::class);
     }
+
+    protected $fillable = [
+        'nama',
+        'alamat',
+        'wa',
+        'angkatan',
+        'username',
+        'password',
+        // Tambahkan kolom-kolom lainnya sesuai kebutuhan
+    ];
 }

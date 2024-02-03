@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('kehadiransiswas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('siswa_id')->references('id')->on('siswas');
+            $table->time('waktu');
             $table->date('tanggal');
             $table->integer('point');
             $table->string('keterangan');

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Siswa;
+use App\Models\Kehadiransiswa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class SiswaController extends Controller
 {
@@ -18,7 +21,7 @@ class SiswaController extends Controller
         $siswa = new Siswa();
         $siswa->nama = $request->input('nama');
         $siswa->WA = $request->input('WA');
-        $siswa->tahun_masuk = $request->input('TA');
+        $siswa->angkatan = $request->input('TA');
         $siswa->alamat = $request->input('alamat');
         $siswa->username = $username;
         $siswa->password = $password;
@@ -28,13 +31,29 @@ class SiswaController extends Controller
         return back()->with('message', "Data Siswa $request->nama Berhasil Ditambahkan");
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function QrCreate()
     {
-        //
+        $from = [255, 0, 0];
+        $to = [0, 0, 255];
+
+        $siswa = Siswa::all();
+
+        foreach ($siswa as $key) {
+            if ($key->qr == null) {
+                $data = QrCode::size(512)->generate($key->id."-".$key->username);
+        
+                $filename = $key->id."_".$key->username.".svg";
+        
+                file_put_contents("Qr/".$filename, $data);
+                $key->qr = $filename;
+                $key->save();
+            }
+        }
+
+        return view('operator.kartu_wb', compact('siswa'));
+    
     }
+
 
     /**
      * Store a newly created resource in storage.

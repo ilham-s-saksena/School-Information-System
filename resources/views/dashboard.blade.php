@@ -137,7 +137,7 @@ Toggle modal
             </div>
         </section>
 
-        <div class="px-2 py-3 flex justify-center mt-1">
+        <div class="px-2 py-3 flex justify-center space-x-2 mt-1">
             <button type="button" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="py-2.5 px-4 bg-blue-500 text-white font-bold rounded-lg relative hover:bg-blue-400 focus:ring-2">
                 <div class="absolute -top-1 -right-1">
                     <span class="relative flex h-3 w-3">
@@ -147,6 +147,16 @@ Toggle modal
                 </div>
                 Absen Mengajar Harian
             </button>
+
+            <a href="/kehadiran_siswa" class="py-2.5 px-4 bg-green-500 text-white font-bold rounded-lg relative hover:bg-green-400 focus:ring-2">
+                <div class="absolute -top-1 -right-1">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                    </span>
+                </div>
+                Lihat Absen Siswa
+            </a>
         </div>
 
     

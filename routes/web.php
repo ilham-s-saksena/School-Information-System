@@ -8,6 +8,8 @@ use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\Auth\LoginsiswaController;
 use App\Http\Middleware\AuthenticatedsiswaMiddleware;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\ApiTwoController;
 
 Route::get('/download/{filename}', function ($filename) {
     $filePath = storage_path('app/public/apk/' . $filename);
@@ -53,6 +55,12 @@ Route::middleware(['auth.siswa'])->prefix('/siswa')->group(function () {
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
     
     Route::post('/foto/profile', [HomeController::class, 'foto'])->name('foto.profile');
+    Route::get('/qrCode', [SiswaController::class, 'QrCreate'])->name('QR');
+    Route::get('/kehadiran_siswa', [ApiTwoController::class, 'kehadiran_today'])->name('kehadiran_today');
+    Route::get('/list_siswa', [ApiTwoController::class, 'list_siswa'])->name('List Siswa');
+    Route::get('/detail/kehadiran/{id}', [ApiTwoController::class, 'detail_kehadiran']);
+    Route::get('/detail/qr/{id}', [ApiTwoController::class, 'detail_qr']);
+
 
     Route::prefix('/')->middleware(['auth', 'isUser'])->group(function(){
         Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
@@ -76,9 +84,11 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
         Route::post('/tambah/pembayaran', [PembayaranController::class, 'tambah_pembayaran'])->name('tambah.pembayaran');
         Route::get('/bayar/{id}', [PembayaranController::class, 'bayar'])->name('bayar');
         Route::post('/bayar/spp/{id}', [PembayaranController::class, 'bayar_spp'])->name('bayar.spp');
+        Route::post('/import-excel', [HomeController::class, 'excel'])->name('excel');
         Route::get('/bayar/cetak-bukti/{id}', [PembayaranController::class, 'cetak_spp'])->name('cetak.bukti-bayar');
     });
 
 
 });
+Route::get('/test/login', [TestController::class, 'login']);
 

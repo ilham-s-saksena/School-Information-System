@@ -16,7 +16,10 @@ return new class extends Migration
             $table->string('nama');
             $table->string('alamat');
             $table->string('wa');
-            $table->string('tahun_masuk');
+            $table->string('angkatan');
+            $table->string('username');
+            $table->string('password');
+            $table->string('qr')->nullable();
             $table->timestamps();
         });
     }

@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApiController;
+use App\Http\Controllers\ApiTwoController;
+use App\Http\Controllers\SiswaController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +25,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/create-absen', [ApiController::class, 'absen'])->name('create-absen');
     Route::post('/profile', [ApiController::class, 'profile'])->name('profile');
     Route::delete('/delete-absen', [ApiController::class, 'deleteAbsen'])->name('delete-absen');
+
+    Route::post('/absen-siswa', [ApiController::class, 'absen_siswa'])->name('absen_siswa');
+    Route::post('/kehadiran_siswa', [ApiTwoController::class, 'absen_today_api'])->name('kehadiran_siswa');
 });
 
 Route::post('/login', [ApiController::class, 'login'])->name('login.api');
