@@ -10,6 +10,7 @@ use App\Http\Middleware\AuthenticatedsiswaMiddleware;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\ApiTwoController;
+use App\Http\Controllers\QRScannerController;
 
 Route::get('/download/{filename}', function ($filename) {
     $filePath = storage_path('app/public/apk/' . $filename);
@@ -22,6 +23,9 @@ Route::get('/download/{filename}', function ($filename) {
     return response()->download($filePath);
 });
 
+
+Route::get('/qr-scanner', [QRScannerController::class, 'showScanner']);
+Route::post('/cek-absen-siswa', [QRScannerController::class, 'showAbsentQr']);
 
 Route::get('/', function () {
     return view('welcome');
