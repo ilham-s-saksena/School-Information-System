@@ -20,7 +20,7 @@
         </span>
         <form action="" method="get" class="ml-3 grid grid-cols-2">
         <div>
-            <input type="text" name="nama" id="nama" placeholder="Cari Siswa ..." required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+            <input type="text" name="nama" id="nama" placeholder="Cari Siswa ..." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " >
         </div>
         <div>
 
@@ -34,15 +34,15 @@
     <div class="mt-5 px-5">
         
 
-        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <div class="relative overflow-auto shadow-md sm:rounded-lg min-h-screen">
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" class="px-6 py-3">
                             Nama
                         </th>
-                        <th scope="col" class="px-6 py-3">
-                            Angkatan
+                        <th scope="col" class="px-6 py-3 text-center">
+                            Kelas
                         </th>
                         <th scope="col" class="px-6 py-3">
                             Aksi
@@ -55,8 +55,11 @@
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             {{ $data->nama }}
                         </th>
-                        <td class="px-6 py-4">
-                            {{ $data->angkatan }}
+                        <td class="px-6 py-4 flex items-center space-x-2 justify-center">
+                            <input id="input-{{$data->id}}" type="text" value="{{ $data->angkatan }}" class="py-0 rounded">
+                            <button id="button-{{$data->id}}" data-id="{{$data->id}}" class="bg-green-600 px-2 rounded text-white py-0.5 hover:bg-green-500 focus:ring">
+                                Simpan
+                            </button>
                         </td>
                         <td class="px-6 py-4">
                             <button id="dropdownDefaultButton2-{{$data->id}}" data-dropdown-toggle="dropdown2-{{$data->id}}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Detail</button>
@@ -93,6 +96,34 @@
 
     </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        @foreach($siswa as $data)
+            document.getElementById('button-{{$data->id}}').addEventListener('click', function () {
+                const input = document.getElementById('input-{{$data->id}}');
+                const button = this;
+                const id = button.getAttribute('data-id');
+                const value = input.value;
+
+                fetch('/update-data/' + id, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                    },
+                    body: JSON.stringify({ value: value })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        button.innerText = 'Disimpan';
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            });
+        @endforeach
+    });
+</script>
 
 
 

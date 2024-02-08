@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\ApiTwoController;
 use App\Http\Controllers\QRScannerController;
+use App\Http\Controllers\MateriController;
 
 Route::get('/download/{filename}', function ($filename) {
     $filePath = storage_path('app/public/apk/' . $filename);
@@ -44,6 +45,7 @@ Route::get('/login-siswa', function () {
 })->name('siswa-login');
 
 Route::post('/siswa-login', [LoginsiswaController::class, 'authenticate_siswa'])->name('login-siswa');
+Route::post('/tugas/{id}', [MateriswaController::class, 'tugas_view'])->name('tugas.view');
 
 
 Route::middleware(['auth.siswa'])->prefix('/siswa')->group(function () {
@@ -61,9 +63,11 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
     Route::post('/foto/profile', [HomeController::class, 'foto'])->name('foto.profile');
     Route::get('/qrCode', [SiswaController::class, 'QrCreate'])->name('QR');
     Route::get('/kehadiran_siswa', [ApiTwoController::class, 'kehadiran_today'])->name('kehadiran_today');
+    Route::get('//print/sertifikat/{id}/{peringkat}/{bulan}', [ApiTwoController::class, 'kehadiran_peringkat'])->name('kehadiran_peringkat');
     Route::get('/list_siswa', [ApiTwoController::class, 'list_siswa'])->name('List Siswa');
     Route::get('/detail/kehadiran/{id}', [ApiTwoController::class, 'detail_kehadiran']);
     Route::get('/detail/qr/{id}', [ApiTwoController::class, 'detail_qr']);
+    Route::post('/update-data/{id}', [SiswaController::class, 'updateData']);
 
 
     Route::prefix('/')->middleware(['auth', 'isUser'])->group(function(){
@@ -80,6 +84,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
         Route::get('/dashboard/tutor', [HomeController::class, 'tutor_list'])->name('admin.tutor');
         Route::post('/dashboard/tutor/update', [HomeController::class, 'tutor_update'])->name('tutor.update');
         Route::get('/store', [HomeController::class, 'admin_store'])->name('admin.store');
+        Route::get('/jurnal_mengajar', [MateriController::class, 'admin_jurnal'])->name('admin.jurnal');
     });
 
     Route::prefix('/operator')->middleware(['auth', 'isOperator'])->group(function(){
@@ -90,6 +95,8 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
         Route::post('/bayar/spp/{id}', [PembayaranController::class, 'bayar_spp'])->name('bayar.spp');
         Route::post('/import-excel', [HomeController::class, 'excel'])->name('excel');
         Route::get('/bayar/cetak-bukti/{id}', [PembayaranController::class, 'cetak_spp'])->name('cetak.bukti-bayar');
+        Route::get('/naik-kelas', [MateriController::class, 'naik_kelas'])->name('op.naik.kelas');
+        Route::get('/form-naik-kelas', [MateriController::class, 'form_naik_kelas'])->name('form.naik.kelas');
     });
 
 

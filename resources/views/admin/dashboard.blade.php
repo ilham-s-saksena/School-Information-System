@@ -141,6 +141,7 @@ $total = 0;
         </div>
 
         <button class="px-5 border-2 border-indigo-50 rounded w-fit flex text-white font-bold bg-indigo-600 items-center justify-center hover:bg-indigo-300 focus:ring focus:ring-offset-1 focus:ring-indigo-50" type="submit">Submit</button>
+        <button name="cetak" value="pdf" class="px-5 border-2 border-indigo-50 rounded w-fit flex text-white font-bold bg-red-600 items-center justify-center hover:bg-red-300 focus:ring focus:ring-offset-1 focus:ring-red-50" type="submit">PDF</button>
 
       </div>
       </div>

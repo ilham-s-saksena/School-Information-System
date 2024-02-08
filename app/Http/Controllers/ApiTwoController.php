@@ -27,6 +27,7 @@ class ApiTwoController extends Controller
         $siswa = Kehadiransiswa::where('tanggal', $currentDate)->get();
 
         $bulan = date('m');
+        $tahun = date('Y');
         
         if ($request->input('bulan')) {
             $bulan = $request->input('bulan');
@@ -42,21 +43,48 @@ class ApiTwoController extends Controller
         if ($request->input('pdf')) {
             return view('operator.absen_pdf', compact('siswa', 'currentDate'));
         }
+
+
+
+
+        $ranking = Siswa::withCount(['kehadiran' => function ($query) use ($bulan, $tahun) {
+            $query->whereMonth('tanggal', $bulan)->whereYear('tanggal', $tahun);
+        }])
+        ->orderByDesc('kehadiran_count')->take(5)->get();
     
 
 
-        return view('operator.kehadiransiswa', compact('siswa', 'jumlahTanggal', 'bulan', 'currentDate'));
+        return view('operator.kehadiransiswa', compact('siswa', 'jumlahTanggal', 'bulan', 'currentDate', 'ranking'));
     }
 
 
-
-    public function list_siswa(Request $request){
-        $siswa = Siswa::all();
-        if ($request->input('nama')) {
-            $siswa = Siswa::where('nama', 'like', '%' . $request->input('nama') . '%')->get();
-        }
-        return view('operator.list_siswa', compact('siswa'));
+    public function kehadiran_peringkat($id, $peringkat, $bulan){
+        $siswa = Siswa::find($id);
+        $bulan = strftime("%B", mktime(0, 0, 0, $bulan, 1));
+        return view('operator.peringkat', compact('siswa', 'peringkat', 'bulan'));
     }
+
+    
+
+
+
+    // Controller
+
+public function list_siswa(Request $request)
+{
+    $siswa = Siswa::all();
+
+    if ($request->input('nama')) {
+        $siswa = Siswa::where('nama', 'like', '%' . $request->input('nama') . '%')->get();
+    }
+
+    if ($request->wantsJson()) {
+        return response()->json($siswa);
+    }
+
+    return view('operator.list_siswa', compact('siswa'));
+}
+
 
     public function detail_kehadiran(Request $request, $id){
 

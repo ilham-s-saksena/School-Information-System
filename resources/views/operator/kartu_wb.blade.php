@@ -18,11 +18,11 @@
                 {{ $data->nama }}
             </p>
         </strong>
+        <p style="text-align: center;">
+            Kelas {{ $data->angkatan }}
+        </p>
         <p style="text-align: center; padding-left: 0.75rem; padding-right: 0.75rem;">
             {{ $data->alamat }}
-        </p>
-        <p style="text-align: center;">
-            {{ $data->wa }}
         </p>
     </div>
 

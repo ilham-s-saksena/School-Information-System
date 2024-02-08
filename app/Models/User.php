@@ -65,4 +65,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Absen::class);
     }
+
+    public function materi(): HasMany
+    {
+        return $this->hasMany(Materi::class);
+    }
 }

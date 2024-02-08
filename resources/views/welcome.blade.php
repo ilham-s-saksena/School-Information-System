@@ -157,6 +157,260 @@
 
             </div>
         </section>
+        
+<section class="pt-5 bg-gradient-to-b from-yellow-100 via-white to-yellow-100">
+    <div class=" flex flex-col items-center ">
+        <div class="text-center">
+            <h2 class="text-3xl font-extrabold mb-3">Tenaga Pengajar Kami</h2>
+            <p class="text-gray-500 text-md px-5 sm:text-lg font-semibold">
+            	Tutor Berpengalaman dan Expert di bidangnya! <br> Bergabung bersama kami menuju pendidikan yang gemilang
+            </p>
+        </div> 
+
+        <div id="default-carousel" class="relative mt-5 text-center w-full max-w-xl overflow-hidden" data-carousel="slide">
+
+            
+            <div class=" h-80 sm:h-96  relative w-full text-center">
+                <figure class="w-full duration-700 hidden ease-in-out " data-carousel-item="">
+                    <div class="grid grid-cols-2 gap-2 px-4">
+
+                    
+                    
+                    <!-- FARIDA -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/farida.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Farida Nur Anisa S.M</div>
+	                        </div>
+	                    </figcaption>
+
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel Ekonomi</div>
+                        </div>
+
+                    </div>
+
+                    <!-- LIA -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/lia.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Liana Niftatu Rahmah</div>
+	                        </div>
+	                    </figcaption>
+
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel B. Indonesia</div>
+                        </div>
+
+	                    
+                    </div>
+                    </div>
+                </figure>
+
+                <figure class="duration-700 hidden ease-in-out " data-carousel-item="">
+                    <div class="grid grid-cols-2 gap-2 px-4">
+
+                    
+                    <!-- ZULFATIN -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/zulfatin.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Zulfatin Alfa Zahroh S.Pd</div>
+	                        </div>
+	                    </figcaption>
+
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel PAI</div>
+                        </div>
+
+	                    
+                    </div>
+
+
+                    <!-- ESA -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/esa.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Esa Melinia Wati S.Pd</div>
+	                        </div>
+	                    </figcaption>
+
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel B. Jawa</div>
+                        </div>
+
+	                    
+                    </div>
+                    </div>
+                </figure>
+
+                <figure class="duration-700 hidden ease-in-out " data-carousel-item="">
+                    <div class="grid grid-cols-2 gap-2 px-4">
+
+                    
+                    <!-- YUNDA -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/yunda.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Ayunda Noviolina</div>
+	                        </div>
+	                    </figcaption>
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel IPA</div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAHMI -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/fahmi.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Fahmi Ayatun S.Pd</div>
+	                        </div>
+	                    </figcaption>
+
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel Matematika</div>
+                        </div>
+                    </div>
+                    </div>
+                </figure>
+
+                <figure class="duration-700 hidden ease-in-out " data-carousel-item="">
+                    <div class="grid grid-cols-2 gap-2 px-4">
+
+                    
+                    <!-- UMI -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/umi.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Umi Hani S.Ag</div>
+	                        </div>
+	                    </figcaption>
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel IPS</div>
+                        </div>
+                    </div>
+                    
+                    <!-- BETI -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/beti.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Beti Priani</div>
+	                        </div>
+	                    </figcaption>
+
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Paket A</div>
+                        </div>
+                    </div>
+                    </div>
+                </figure>
+
+
+                <figure class="duration-700 hidden ease-in-out " data-carousel-item="">
+                    <div class="grid grid-cols-2 gap-2 px-4">
+
+                    
+                    <!-- HARI -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/hari.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Hari Prasojo S.Pd</div>
+	                        </div>
+	                    </figcaption>
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel B. Inggris</div>
+                        </div>
+                    </div>
+                    
+                    <!-- ONI -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/oni.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Carkoni S.Pd</div>
+	                        </div>
+	                    </figcaption>
+
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel B. Inggris</div>
+                        </div>
+                    </div>
+                    </div>
+                </figure>
+
+                <figure class="duration-700 hidden ease-in-out " data-carousel-item="">
+                    <div class="grid grid-cols-2 gap-2 px-4">
+
+                    
+                    <!-- BUDI -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/budi.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Budi Setriana S.Pd</div>
+	                        </div>
+	                    </figcaption>
+                    
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel Sosiologi</div>
+                        </div>
+                    </div>
+                    
+                    <!-- ILHAM -->
+                    <div class="bg-white h-80 sm:h-full shadow-xl p-2 sm:p-4 border  rounded-xl">
+                    	<div style="background-image: url('/tutor/ilham.jpg');" class="bg-cover rounded-t-lg bg-top bg-no-repeat w-full h-48 sm:h-64"></div>
+	                    <figcaption class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE pSnS_Sqc_IApyugF_VpP B1cgbA6Bb4LQo0qFJKck">
+	                        <div class="mt-3 font-bold">
+	                            <div class=" _A6LflweZRUwrcL6M2Tk g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">Ilham Sidik Saksena S.Kom</div>
+	                        </div>
+	                    </figcaption>
+
+                        <div class="justify-center text-gray-600">
+							<div class=" MxG1ClE4KPrIvlL5_Q5x XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr eCx_6PNzncAD5yo7Qcic">Tutor Mapel TIK</div>
+                        </div>
+                    </div>
+                    </div>
+                </figure>
+                
+            </div>
+
+            <div class="mt-10 space-x-5">
+                <button type="button" class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE _ryfipzijJEI18CFfJIm j34KztD3SBxL_tQWzosr avTmsFU5TwHXQh07Ji35 group qHIOIw8TObHgD3VvKa5x" data-carousel-prev="">
+                    <span class="text-gray-600 WvrFEtphYDYX1sAkd4TH V6K1lgYle5x1_8j4in7F">
+                        <svg class="w-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                        
+                    </span>
+                </button>
+                <button type="button" class="kqgYncRJQ7spwKfig6It _WclR59Ji8jwfmjPtOei neyUwteEn7DOg9pBSJJE j34KztD3SBxL_tQWzosr avTmsFU5TwHXQh07Ji35 group qHIOIw8TObHgD3VvKa5x" data-carousel-next="">
+                    <span class="text-gray-600 WvrFEtphYDYX1sAkd4TH V6K1lgYle5x1_8j4in7F">
+                        <svg class="w-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </section>
+          
+          
+        
         <section id="fasilitas" class="max-w-screen bg-gradient-to-b to-green-200 via-100-200 from-yellow-100 pt-20 pb-20 px-5">
             <div class="grid sm:grid-cols-3 grid-cols-1 items-center">
                 <div class="text-center sm:text-right px-5">
@@ -193,25 +447,67 @@
             </div>
         </section>
 
-        <section id="kegiatan" class="max-w-screen bg-gradient-to-t to-green-200 via-100-200 from-white pt-5 pb-20 px-5">
+        <section id="kegiatan" class="max-w-screen bg-gradient-to-t to-green-200 via-100-200 from-teal-300 pt-5 pb-20 px-5">
             <div class="grid sm:grid-cols-3 grid-cols-1 items-center">
-                <div class="grid sm:grid-cols-3 grid-cols-1 sm:col-span-2 col-span-1  gap-2">
-                    <div class="col-span-1 sm:col-span-2 w-full py-2 rounded-lg hover:shadow-xl h-52 bg-cover bg-no-repeat bg-center shadow-xl" 
-                    style="background-image: url('/img/img1.jpg');"></div>
+                <div class="grid sm:grid-cols-3 grid-cols-1 sm:col-span-2 col-span-1  gap-4">
+                    <div class="col-span-1 sm:col-span-2 w-full py-2 rounded-lg hover:shadow-xl h-52 bg-cover bg-no-repeat bg-center shadow-xl relative group hover:scale-105 transition-all" 
+                    style="background-image: url('/img/img1.jpg');">
+                        <div class="absolute bottom-0 w-full text-center bg-black/75 rounded-b-lg font-bold text-transparent transition-all duration-200 h-0 py-0 group-hover:h-fit group-hover:py-2 group-hover:text-white">
+                            Jambore Pendidikan Kesetaraan
+                        </div>
+                    </div>
 
-                    <div class="w-full py-2 bg-cover h-52 bg-no-repeat bg-center shadow-xl rounded-lg" 
-                    style="background-image: url('/img/img3.jpg');"></div>
-                    
-                    <div class="w-full py-2 rounded-lg bg-cover h-52 bg-no-repeat bg-center shadow-xl" 
-                    style="background-image: url('/img/img5.jpg');">
-                        
+                    <div class="w-full py-2 bg-cover h-52 bg-no-repeat bg-center shadow-xl rounded-lg relative group hover:scale-105 transition-all" 
+                    style="background-image: url('/img/img3.jpg');">
+                        <div class="absolute bottom-0 w-full text-center bg-black/75 rounded-b-lg font-bold text-transparent transition-all duration-200 h-0 py-0 group-hover:h-fit group-hover:py-2 group-hover:text-white">
+                            Pentas Seni
+                        </div>
                     </div>
                     
-                    <div class="col-span-1 sm:col-span-2 w-full py-2 rounded-lg bg-cover h-52 bg-no-repeat bg-center shadow-xl" 
-                    style="background-image: url('/img/img6.jpg');"></div>
+                    <div class="w-full py-2 rounded-lg bg-cover h-52 bg-no-repeat bg-center shadow-xl relative group hover:scale-105 transition-all" 
+                    style="background-image: url('/img/img5.jpg');">
+                        <div class="absolute bottom-0 w-full text-center bg-black/75 rounded-b-lg font-bold text-transparent transition-all duration-200 h-0 py-0 group-hover:h-fit group-hover:py-2 group-hover:text-white">
+                            Senam Pagi
+                        </div>
+                    </div>
+                    
+                    <div class="col-span-1 sm:col-span-2 w-full py-2 rounded-lg bg-cover h-52 bg-no-repeat bg-center shadow-xl relative group hover:scale-105 transition-all" 
+                    style="background-image: url('/img/img6.jpg');">
+                        <div class="absolute bottom-0 w-full text-center bg-black/75 rounded-b-lg font-bold text-transparent transition-all duration-200 h-0 py-0 group-hover:h-fit group-hover:py-2 group-hover:text-white">
+                            Study Tour
+                        </div>
+                    </div>
+
+                    <div class="col-span-1 sm:col-span-2 w-full py-2 rounded-lg hover:shadow-xl h-52 bg-cover bg-no-repeat bg-center shadow-xl relative group hover:scale-105 transition-all" 
+                    style="background-image: url('/img/img7.jpg');">
+                        <div class="absolute bottom-0 w-full text-center bg-black/75 rounded-b-lg font-bold text-transparent transition-all duration-200 h-0 py-0 group-hover:h-fit group-hover:py-2 group-hover:text-white">
+                            Kegiatan P5
+                        </div>
+                    </div>
+                    
+                    <div class="w-full py-2 bg-cover h-52 bg-no-repeat bg-center shadow-xl rounded-lg relative group hover:scale-105 transition-all" 
+                    style="background-image: url('/img/img8.jpg');">
+                        <div class="absolute bottom-0 w-full text-center bg-black/75 rounded-b-lg font-bold text-transparent transition-all duration-200 h-0 py-0 group-hover:h-fit group-hover:py-2 group-hover:text-white">
+                            Kegiatan P5
+                        </div>
+                    </div>
+                    
+                    <div class="col-span-1 sm:col-span-2 w-full py-2 rounded-lg hover:shadow-xl h-52 bg-cover bg-no-repeat bg-center shadow-xl relative group hover:scale-105 transition-all" 
+                    style="background-image: url('/img/img11.jpg');">
+                        <div class="absolute bottom-0 w-full text-center bg-black/75 rounded-b-lg font-bold text-transparent transition-all duration-200 h-0 py-0 group-hover:h-fit group-hover:py-2 group-hover:text-white">
+                            Program PKW
+                        </div>
+                    </div>
+                    
+                    <div class="w-full py-2 bg-cover h-52 bg-no-repeat bg-center shadow-xl rounded-lg relative group hover:scale-105 transition-all" 
+                    style="background-image: url('/img/img10.jpg');">
+                        <div class="absolute bottom-0 w-full text-center bg-black/75 rounded-b-lg font-bold text-transparent transition-all duration-200 h-0 py-0 group-hover:h-fit group-hover:py-2 group-hover:text-white">
+                            Program PKW
+                        </div>
+                    </div>
 
                 </div>
-                <div class="text-center sm:text-left px-5 sm:order-last order-first">
+                <div class="text-center sm:text-left px-5 sm:order-last order-first ">
                     <h1 class="font-extrabold text-3xl">KEGIATAN</h1>
                     <h2 class="font-semibold italic py-2">Kegiatan-kegiatan yang dilaksanakan oleh PKBM Harapan Bangsa meliputi beragam aktivitas yang didesain untuk memperkaya pengalaman belajar para siswa serta meningkatkan keterampilan mereka dalam berbagai bidang.</h2>
                 </div>
@@ -219,7 +515,7 @@
             </div>
         </section>
 
-        <footer class="p-4 bg-white md:p-8 lg:p-10 ">
+        <footer class="p-4 bg-teal-300 md:p-8 lg:p-10 ">
             <div class="mx-auto max-w-screen-xl text-center">
                 <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 ">
                     <div class="">
@@ -265,10 +561,10 @@
 
 
   
-    <div class="fixed bottom-12 right-12 sm:bottom-20 sm:right-20 z-40 border">
+<div class="fixed bottom-12 right-12 sm:bottom-20 sm:right-20 z-40 border">
         <div class="relative group cursor-pointer">
-            <div class="group-hover:bg-green-700 group-hover:w-0 group-hover:h-0 absolute top-1/2 -translate-y-1/2 right-4 transition-all bg-white w-80 z-10 font-bold text-green-500 pl-5 border border-green-700 rounded-l-full text-xl py-2">
-                <span class="group-hover:hidden delay-1000">Lihat Absen Kehadiran Siswa</span>
+            <div class="group-hover:bg-green-700 group-hover:w-0 group-hover:h-0 absolute top-1/2 -translate-y-1/2 right-4 transition-all bg-white w-60 z-10 font-bold text-green-500 pl-5 border border-green-700 rounded-l-full text-lg py-2">
+                <span class="group-hover:hidden delay-1000">Lihat Absen Siswa</span>
             </div>
             <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" id="qr" type="button" class="text-green-700 absolute top-1/2 -translate-y-1/2 -left-1/2 -translate-x-1/2 border border-green-700 bg-white z-40 group-hover:bg-green-700 group-hover:text-white focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-full text-sm p-5 text-center inline-flex items-center me-2 ">
                 <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M23 4C23 2.34315 21.6569 1 20 1H16C15.4477 1 15 1.44772 15 2C15 2.55228 15.4477 3 16 3H20C20.5523 3 21 3.44772 21 4V8C21 8.55228 21.4477 9 22 9C22.5523 9 23 8.55228 23 8V4Z" fill="currentColor"></path> <path d="M23 16C23 15.4477 22.5523 15 22 15C21.4477 15 21 15.4477 21 16V20C21 20.5523 20.5523 21 20 21H16C15.4477 21 15 21.4477 15 22C15 22.5523 15.4477 23 16 23H20C21.6569 23 23 21.6569 23 20V16Z" fill="currentColor"></path> <path d="M4 21C3.44772 21 3 20.5523 3 20V16C3 15.4477 2.55228 15 2 15C1.44772 15 1 15.4477 1 16V20C1 21.6569 2.34315 23 4 23H8C8.55228 23 9 22.5523 9 22C9 21.4477 8.55228 21 8 21H4Z" fill="currentColor"></path> <path d="M1 8C1 8.55228 1.44772 9 2 9C2.55228 9 3 8.55228 3 8V4C3 3.44772 3.44772 3 4 3H8C8.55228 3 9 2.55228 9 2C9 1.44772 8.55228 1 8 1H4C2.34315 1 1 2.34315 1 4V8Z" fill="currentColor"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6C11 5.44772 10.5523 5 10 5H6C5.44772 5 5 5.44772 5 6V10C5 10.5523 5.44772 11 6 11H10C10.5523 11 11 10.5523 11 10V6ZM9 7.5C9 7.22386 8.77614 7 8.5 7H7.5C7.22386 7 7 7.22386 7 7.5V8.5C7 8.77614 7.22386 9 7.5 9H8.5C8.77614 9 9 8.77614 9 8.5V7.5Z" fill="currentColor"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M18 13C18.5523 13 19 13.4477 19 14V18C19 18.5523 18.5523 19 18 19H14C13.4477 19 13 18.5523 13 18V14C13 13.4477 13.4477 13 14 13H18ZM15 15.5C15 15.2239 15.2239 15 15.5 15H16.5C16.7761 15 17 15.2239 17 15.5V16.5C17 16.7761 16.7761 17 16.5 17H15.5C15.2239 17 15 16.7761 15 16.5V15.5Z" fill="currentColor"></path> <path d="M14 5C13.4477 5 13 5.44772 13 6C13 6.55229 13.4477 7 14 7H16.5C16.7761 7 17 7.22386 17 7.5V10C17 10.5523 17.4477 11 18 11C18.5523 11 19 10.5523 19 10V6C19 5.44772 18.5523 5 18 5H14Z" fill="currentColor"></path> <path d="M14 8C13.4477 8 13 8.44771 13 9V10C13 10.5523 13.4477 11 14 11C14.5523 11 15 10.5523 15 10V9C15 8.44772 14.5523 8 14 8Z" fill="currentColor"></path> <path d="M6 13C5.44772 13 5 13.4477 5 14V16C5 16.5523 5.44772 17 6 17C6.55229 17 7 16.5523 7 16V15.5C7 15.2239 7.22386 15 7.5 15H10C10.5523 15 11 14.5523 11 14C11 13.4477 10.5523 13 10 13H6Z" fill="currentColor"></path> <path d="M10 17C9.44771 17 9 17.4477 9 18C9 18.5523 9.44771 19 10 19C10.5523 19 11 18.5523 11 18C11 17.4477 10.5523 17 10 17Z" fill="currentColor"></path> </g></svg>
@@ -291,47 +587,109 @@
                     <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M23 4C23 2.34315 21.6569 1 20 1H16C15.4477 1 15 1.44772 15 2C15 2.55228 15.4477 3 16 3H20C20.5523 3 21 3.44772 21 4V8C21 8.55228 21.4477 9 22 9C22.5523 9 23 8.55228 23 8V4Z" fill="currentColor"></path> <path d="M23 16C23 15.4477 22.5523 15 22 15C21.4477 15 21 15.4477 21 16V20C21 20.5523 20.5523 21 20 21H16C15.4477 21 15 21.4477 15 22C15 22.5523 15.4477 23 16 23H20C21.6569 23 23 21.6569 23 20V16Z" fill="currentColor"></path> <path d="M4 21C3.44772 21 3 20.5523 3 20V16C3 15.4477 2.55228 15 2 15C1.44772 15 1 15.4477 1 16V20C1 21.6569 2.34315 23 4 23H8C8.55228 23 9 22.5523 9 22C9 21.4477 8.55228 21 8 21H4Z" fill="currentColor"></path> <path d="M1 8C1 8.55228 1.44772 9 2 9C2.55228 9 3 8.55228 3 8V4C3 3.44772 3.44772 3 4 3H8C8.55228 3 9 2.55228 9 2C9 1.44772 8.55228 1 8 1H4C2.34315 1 1 2.34315 1 4V8Z" fill="currentColor"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6C11 5.44772 10.5523 5 10 5H6C5.44772 5 5 5.44772 5 6V10C5 10.5523 5.44772 11 6 11H10C10.5523 11 11 10.5523 11 10V6ZM9 7.5C9 7.22386 8.77614 7 8.5 7H7.5C7.22386 7 7 7.22386 7 7.5V8.5C7 8.77614 7.22386 9 7.5 9H8.5C8.77614 9 9 8.77614 9 8.5V7.5Z" fill="currentColor"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M18 13C18.5523 13 19 13.4477 19 14V18C19 18.5523 18.5523 19 18 19H14C13.4477 19 13 18.5523 13 18V14C13 13.4477 13.4477 13 14 13H18ZM15 15.5C15 15.2239 15.2239 15 15.5 15H16.5C16.7761 15 17 15.2239 17 15.5V16.5C17 16.7761 16.7761 17 16.5 17H15.5C15.2239 17 15 16.7761 15 16.5V15.5Z" fill="currentColor"></path> <path d="M14 5C13.4477 5 13 5.44772 13 6C13 6.55229 13.4477 7 14 7H16.5C16.7761 7 17 7.22386 17 7.5V10C17 10.5523 17.4477 11 18 11C18.5523 11 19 10.5523 19 10V6C19 5.44772 18.5523 5 18 5H14Z" fill="currentColor"></path> <path d="M14 8C13.4477 8 13 8.44771 13 9V10C13 10.5523 13.4477 11 14 11C14.5523 11 15 10.5523 15 10V9C15 8.44772 14.5523 8 14 8Z" fill="currentColor"></path> <path d="M6 13C5.44772 13 5 13.4477 5 14V16C5 16.5523 5.44772 17 6 17C6.55229 17 7 16.5523 7 16V15.5C7 15.2239 7.22386 15 7.5 15H10C10.5523 15 11 14.5523 11 14C11 13.4477 10.5523 13 10 13H6Z" fill="currentColor"></path> <path d="M10 17C9.44771 17 9 17.4477 9 18C9 18.5523 9.44771 19 10 19C10.5523 19 11 18.5523 11 18C11 17.4477 10.5523 17 10 17Z" fill="currentColor"></path> </g></svg>
 
                     <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Arahkan Kamera ke Kode QR Pada Kartu Tanda Siswa</h3>
-                    <button id="stop" data-modal-hide="popup-modal" type="button" class="text-white w-full text-center bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 justify-center me-2">
-                        Tutup
-                    </button>
-                </div>
+                    <button id="change" type="button" class="text-white w-full text-center bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 justify-center me-2 mb-2">
+    Putar Kamera
+</button>
+<button id="stop" data-modal-hide="popup-modal" type="button" class="text-white w-full text-center bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 justify-center me-2">
+    Tutup
+</button>
+</div>
+</div>
+</div>
+</div>
+
+
+@if(session()->has('message'))
+
+<div id="alert" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full justify-center items-center flex bg-black/75" aria-modal="true" role="dialog">
+    <div class="relative p-4 w-full max-w-md max-h-full">
+        <div class="relative bg-white rounded-lg shadow ">
+            <button type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center " data-modal-hide="alert">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+            <div class="p-4 md:p-5 text-center">
+                <svg class="mx-auto mb-4 text-green-600 w-12 h-12 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                </svg>
+                <h3 class="mb-5 text-lg font-normal text-gray-500 ">
+                    {{ session('message') }}
+                </h3>
+                <button data-modal-hide="alert" type="button" class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center me-2">
+                    Oke
+                </button>
+                
             </div>
         </div>
     </div>
-    
-    <form id="myForm" action="/cek-absen-siswa" method="post" class="hidden">
-        @csrf
-        <input type="hidden" name="idSiswa" id="scannedNumber" value="">
-        <button type="submit">Process</button>
-    </form>
+</div>
+
+@endif
+
+
+<button data-modal-target="alert" data-modal-toggle="alert" class="hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+Toggle modal
+</button>
+
+<form id="myForm" action="/cek-absen-siswa" method="get" class="hidden">
+    @csrf
+    <input type="hidden" name="idSiswa" id="scannedNumber" value="">
+    <button type="submit">Process</button>
+</form>
 
 <script type="text/javascript" src="/asset/js/instascan.min.js"></script>
 
 <script>
-        var scanner;
+    var scanner;
+    var isFrontCamera = 1;
 
-        document.getElementById('qr').addEventListener('click', function(){
-            scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-            scanner.addListener('scan', function (content) {
-                var extractedNumber = parseInt(content.match(/\d+/)[0], 10);
-                console.log(extractedNumber);
-                document.getElementById('scannedNumber').value = extractedNumber;
-                scanner.stop();
-                console.log('Scanner stopped');
-                document.getElementById('myForm').submit();
-            });
+    document.getElementById('qr').addEventListener('click', function(){
+        startScanner();
+    });
 
-            Instascan.Camera.getCameras().then(function (cameras) {
-                if (cameras.length > 0) {
-                    scanner.start(cameras[0]);
-                } else {
-                    console.error('No cameras found.');
-                }
-            }).catch(function (e) {
-                console.error(e);
-            });
+    function startScanner() {
+        scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+        scanner.addListener('scan', function (content) {
+            document.getElementById('scannedNumber').value = content;
+            scanner.stop();
+            console.log('Scanner stopped');
+            document.getElementById('myForm').submit();
         });
-    </script>
+        
+        
+
+        Instascan.Camera.getCameras().then(function (cameras) {
+            if (cameras.length > 0) {
+                
+                scanner.start(cameras[isFrontCamera])
+                document.getElementById('change').addEventListener('click', function(){
+                    if(isFrontCamera == 1){
+                        isFrontCamera = isFrontCamera - 1;
+                    } else {
+                        isFrontCamera = isFrontCamera + 1;
+                    }
+                    scanner.stop();
+                    scanner.start(cameras[isFrontCamera])
+                });
+                
+                // scanner.start(isFrontCamera ? cameras[1] : cameras[0]);
+            } else {
+                console.error('No cameras found.');
+            }
+        }).catch(function (e) {
+            console.error(e);
+        });
+        
+        document.getElementById('stop').addEventListener('click', function(){
+            scanner.stop();
+            isFrontCamera = 1;
+        });
+    }
+</script>
+
+
 
         
     </body>

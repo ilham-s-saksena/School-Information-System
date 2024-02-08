@@ -20,16 +20,23 @@ class ApiController extends Controller
 
         if (Auth::attempt($credentials)) {
             $user = Auth::user();
-            $token = $user->createToken('Harabang.Januari@12')->accessToken;
             $token = $user->createToken('Harabang.Januari@12')->plainTextToken;
 
-            return response()->json(['token' => $token], 200);
+            return response()->json(['token' => $token, 'message' => 'Login successful'], 200);
         } else {
-            return response()->json(["error" => "Password atau Email salah"], 400);
-        }
-        
+            // Cek apakah email atau password yang salah
+            $user = User::where('email', $request->email)->first();
+            
+            if (!$user) {
+                return response()->json(["error" => "Email tidak ditemukan"], 404);
+            }
 
-        
+            if (!Hash::check($request->password, $user->password)) {
+                return response()->json(["error" => "Password salah"], 401);
+            }
+
+            return response()->json(["error" => "Email atau password salah"], 401);
+        }
     }
 
     public function register(Request $request)

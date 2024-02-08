@@ -13,6 +13,25 @@ class SiswaController extends Controller
     /**
      * Display a listing of the resource.
      */
+
+     public function updateData(Request $request, $id)
+    {
+        $siswa = Siswa::findOrFail($id);
+
+        // Validasi input jika diperlukan
+        $request->validate([
+            'value' => 'required', // Sesuaikan dengan kebutuhan validasi Anda
+        ]);
+
+        // Update kolom angkatan
+        $siswa->angkatan = $request->input('value');
+        $siswa->save();
+
+        return response()->json(['success' => true]);
+    }
+
+
+
     public function tambah_siswa(Request $request)
     {
         $username = '@' . strtolower(str_replace(' ', '', $request->input('nama')));

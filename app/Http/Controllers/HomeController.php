@@ -90,6 +90,10 @@ class HomeController extends Controller
 
         $user = $userQuery->get();
 
+        if ($request->input('cetak') == 'pdf') {
+            return view('admin.pdf', compact('user', 'year', 'months'));
+        }
+
         return view('admin.dashboard', compact('user', 'year', 'months'));
     }
 

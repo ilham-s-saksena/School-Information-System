@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\ApiTwoController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\MateriController;
 
 
 /*
@@ -28,6 +29,9 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('/absen-siswa', [ApiController::class, 'absen_siswa'])->name('absen_siswa');
     Route::post('/kehadiran_siswa', [ApiTwoController::class, 'absen_today_api'])->name('kehadiran_siswa');
+
+    Route::post('/create_materi', [MateriController::class, 'create_materi'])->name('create_materi');
+    Route::get('/read_materi', [MateriController::class, 'read_materi'])->name('read_materi');
 });
 
 Route::post('/login', [ApiController::class, 'login'])->name('login.api');
